@@ -1,0 +1,106 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+svg {
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+}
+
+.svg-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.doc-header {
+    height: 7.2rem;
+}
+
+.gnb {
+    width: 129.6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doc-header-title {
+    display: flex;
+    height: 7.2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.gnb-menu {
+    display: flex;
+    height: 7.2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.gnb-menu li {
+    padding: 0 2.8rem;
+}
+
+.gnb-util {
+    display: flex;
+    width: 14rem;
+    height: 7.2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doc-main * {
+    width: 129.6rem;
+    margin: 0 auto;
+}
+
+.main-section {
+    padding-top: 9.6rem;
+    font-size: 4.6rem;
+    font-weight: bold;
+}
+
+.title-main * {
+    display: block;
+    margin: 1rem 0;
+}
+
+.title-emph::before {
+    content: "";
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    margin-right: 1rem;
+    background: url("./images/calendar.gif") no-repeat 0 0;
+    background-size: auto 7rem;
+    vertical-align: middle;
+}
