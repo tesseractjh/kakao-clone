@@ -67,6 +67,18 @@ svg {
     padding: 0 2.8rem;
 }
 
+.gnb-menu:hover li  {
+    color: grey;
+}
+
+.gnb-menu li:hover {
+    color: black;
+}
+
+a.gnb-menu-item {
+    color: inherit;
+}
+
 .gnb-util {
     display: flex;
     width: 14rem;
