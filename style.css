@@ -1,5 +1,17 @@
+@font-face {
+    font-family: 'kakao';
+    src: url('./fonts/kakao.woff2') format('truetype');
+}
+
 html {
     font-size: 62.5%;
+}
+
+body {
+    word-break: keep-all;
+    word-wrap: break-word;
+    font-family: 'kakao';
+    font-stretch: ultra-condensed;
 }
 
 a {
@@ -13,14 +25,9 @@ a:visited {
 
 button {
     border: 0;
+    padding: 0;
     background-color: inherit;
     cursor: pointer;
-}
-
-svg {
-    stroke: black;
-    stroke-width: 1.5px;
-    fill: none;
 }
 
 .blind {
@@ -34,12 +41,16 @@ svg {
     clip: rect(0, 0, 0, 0);
 }
 
+
+/* 메인 헤더 */
+
 .doc-header {
     height: 7.2rem;
 }
 
 .gnb {
     width: 129.6rem;
+    min-width: 95.2rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -61,6 +72,7 @@ svg {
     align-items: center;
     font-size: 1.7rem;
     font-weight: bold;
+    letter-spacing: -0.1rem;
 }
 
 .gnb-menu li {
@@ -91,6 +103,7 @@ a.gnb-menu-item {
     display: flex;
     width: 4rem;
     height: 4rem;
+    padding: 0.8rem;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -100,7 +113,16 @@ a.gnb-menu-item {
     background-color: rgb(240, 240, 240);
 }
 
-.doc-main * {
+.gnb-svg {
+    stroke: black;
+    stroke-width: 1.5px;
+    fill: none;
+}
+
+
+/* 메인 */
+
+.doc-main > * {
     width: 129.6rem;
     margin: 0 auto;
 }
@@ -125,4 +147,117 @@ a.gnb-menu-item {
     background: url("./images/calendar.gif") no-repeat 0 0;
     background-size: auto 7rem;
     vertical-align: middle;
+}
+
+
+/* 메인 아티클 1 */
+
+.card-article {
+    display: flex;
+    height: 110.4rem;
+    padding-top: 9.6rem;
+    margin: 0 -1.8rem;
+}
+
+.card-wrap {
+    width: 50%;
+    padding: 0 1.8rem;
+}
+
+.card {
+    position: relative;
+    padding: 2.5rem 2.4rem 0;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 0 6px rgb(0 0 0 / 9%);
+}
+
+.card-cate {
+    display: flex;
+}
+
+.cate-icon {
+    display: inline-block;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-right: 0.8rem;
+}
+
+.cate-txt {
+    display: inline-block;
+    position: relative;
+    width: 5.2rem;
+    height: 3.6rem;
+    padding: 0 0.75rem;
+    font-size: 1.3rem;
+    line-height: 3.6rem;
+    text-align: center;
+    border-radius: 13px;
+    background-color: #eee;
+}
+
+.cate-txt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url("./images/cate.svg") no-repeat 0 0;
+}
+
+.card-link {
+    display: block;
+    position: relative;
+    margin: 0 -2.4rem;
+}
+
+.card-title {
+    display: block;
+    margin-top: 1.3rem;
+    padding: 0 2.4rem;
+    font-size: 3.2rem;
+    line-height: 4.6rem;
+}
+
+.card-info {
+    display: block;
+    position: absolute;
+    top: 16.2rem;
+    left: 0;
+    padding-left: 2.4rem;
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.img-wrap {
+    display: block;
+    width: 100%;
+    margin-top: 6.3rem;
+}
+
+.card-img {
+    display: block;
+}
+
+.card-keyword {
+    margin-right: 0.3rem;
+}
+
+.card-button {
+    display: flex;
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    top: 3rem;
+    right: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-svg {
+    stroke: black#bbb;
+    stroke-width: 1.5px;
+    fill: #bbb;
 }
