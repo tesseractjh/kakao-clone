@@ -1,6 +1,22 @@
 @font-face {
-    font-family: 'kakao';
-    src: url('./fonts/kakao.woff2') format('truetype');
+    font-family: 'kakao1';
+    src: url('./fonts/kakao1.woff2') format('truetype');
+}
+@font-face {
+    font-family: 'kakao2';
+    src: url('./fonts/kakao2.woff2') format('truetype');
+}
+@font-face {
+    font-family: 'kakao3';
+    src: url('./fonts/kakao3.woff2') format('truetype');
+}
+@font-face {
+    font-family: 'kakao4';
+    src: url('./fonts/kakao4.woff2') format('truetype');
+}
+@font-face {
+    font-family: 'kakao5';
+    src: url('./fonts/kakao5.woff2') format('truetype');
 }
 
 /* reset */
@@ -12,7 +28,7 @@ html {
 body {
     word-break: keep-all;
     word-wrap: break-word;
-    font-family: 'kakao';
+    font-family: 'kakao5';
     font-stretch: ultra-condensed;
 }
 
@@ -73,7 +89,6 @@ button {
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    font-weight: bold;
 }
 
 .gnb-menu {
@@ -82,7 +97,6 @@ button {
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    font-weight: bold;
     letter-spacing: -0.1rem;
 }
 
@@ -140,11 +154,11 @@ a.gnb-menu-item {
 
 .main-section {
     padding-top: 9.6rem;
-    font-weight: bold;
 }
 
 .title-main {
     font-size: 4.6rem;
+    letter-spacing: -0.2rem;
 }
 
 .title-main * {
@@ -216,6 +230,7 @@ a.gnb-menu-item {
     height: 3.6rem;
     padding: 0 1.3rem;
     font-size: 1.3rem;
+    font-family: "kakao2", sans-serif;
     line-height: 3.6rem;
     text-align: center;
     border-radius: 13px;
@@ -245,6 +260,7 @@ a.gnb-menu-item {
     margin-top: 1.3rem;
     padding: 0 2.4rem;
     font-size: 3.2rem;
+    font-family: "kakao4", sans-serif;
     line-height: 4.6rem;
 }
 
@@ -264,7 +280,6 @@ a.gnb-menu-item {
 
 .img-wrap {
     display: block;
-    width: 100%;
     margin-top: 6.3rem;
 }
 
@@ -276,6 +291,7 @@ a.gnb-menu-item {
 .card-keyword {
     display: inline-block;
     margin-right: 0.3rem;
+    font-family: "kakao1", sans-serif;
 }
 
 .card-button {
@@ -322,6 +338,7 @@ a.gnb-menu-item {
     margin-top: 1.3rem;
     padding: 0 2.4rem;
     font-size: 2.2rem;
+    font-family: "kakao4", sans-serif;
     line-height: 3.2rem;
 }
 
