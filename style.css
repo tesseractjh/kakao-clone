@@ -387,6 +387,7 @@ a.gnb-menu-item {
     position: absolute;
     top: 14rem;
     font-size: 1.3rem;
+    font-family: "kakao1", sans-serif;
     color: #666;
     white-space: nowrap;
 }
