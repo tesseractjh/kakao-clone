@@ -177,12 +177,12 @@ a.gnb-menu-item {
 }
 
 .title-emph::before {
-    content: "";
+    content: '';
     display: inline-block;
     width: 7rem;
     height: 7rem;
     margin-right: 1rem;
-    background: url("./images/calendar.gif") no-repeat 0 0;
+    background: url('./images/calendar.gif') no-repeat 0 0;
     background-size: auto 7rem;
     vertical-align: middle;
 }
@@ -238,7 +238,7 @@ a.gnb-menu-item {
     height: 3.6rem;
     padding: 0 1.3rem;
     font-size: 1.3rem;
-    font-family: "kakao2", sans-serif;
+    font-family: 'kakao2', sans-serif;
     line-height: 3.6rem;
     text-align: center;
     border-radius: 13px;
@@ -246,14 +246,14 @@ a.gnb-menu-item {
 }
 
 .cate-txt::before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: 0;
     left: -0.4rem;
     width: 1.6rem;
     height: 1.6rem;
-    background: url("./images/cate.svg") no-repeat 0 0;
+    background: url('./images/cate.svg') no-repeat 0 0;
 }
 
 .card-link {
@@ -268,7 +268,7 @@ a.gnb-menu-item {
     margin-top: 1.3rem;
     padding: 0 2.4rem;
     font-size: 3.2rem;
-    font-family: "kakao4", sans-serif;
+    font-family: 'kakao4', sans-serif;
     line-height: 4.6rem;
 }
 
@@ -299,7 +299,7 @@ a.gnb-menu-item {
 .card-keyword {
     display: inline-block;
     margin-right: 0.3rem;
-    font-family: "kakao1", sans-serif;
+    font-family: 'kakao1', sans-serif;
 }
 
 .card-button {
@@ -346,7 +346,7 @@ a.gnb-menu-item {
     margin-top: 1.3rem;
     padding: 0 2.4rem;
     font-size: 2.2rem;
-    font-family: "kakao4", sans-serif;
+    font-family: 'kakao4', sans-serif;
     line-height: 3.2rem;
 }
 
@@ -381,7 +381,7 @@ a.gnb-menu-item {
 }
 
 .price-change::before {
-    content: "";
+    content: '';
     position: absolute;
     top: calc(50% - 0.1rem);
     left: -1rem;
@@ -395,7 +395,7 @@ a.gnb-menu-item {
     position: absolute;
     top: 14rem;
     font-size: 1.3rem;
-    font-family: "kakao1", sans-serif;
+    font-family: 'kakao1', sans-serif;
     color: #666;
     white-space: nowrap;
 }
@@ -420,7 +420,7 @@ a.gnb-menu-item {
     display: block;
     width: 100%;
     font-size: 4.2rem;
-    font-family: "kakao4", sans-serif;
+    font-family: 'kakao4', sans-serif;
 }
 
 a.culture-link {
@@ -431,7 +431,7 @@ a.culture-link {
     border-radius: 4.2rem;
     font-size: 1.4rem;
     line-height: 2rem;
-    font-family: "kakao2", sans-serif;
+    font-family: 'kakao2', sans-serif;
     color: white;
     background-color: black;
     vertical-align: top;
