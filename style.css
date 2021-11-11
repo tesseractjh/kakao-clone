@@ -151,13 +151,19 @@ a.gnb-menu-item {
 
 /* 메인 */
 
-.doc-main > * {
-    width: 129.6rem;
-    margin: 0 auto;
+.doc-main {
+    padding-top: 9.6rem;
 }
 
-.main-section {
-    padding-top: 9.6rem;
+.doc-main > * {
+    width: 129.6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.doc-main > section > * {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-title {
@@ -184,10 +190,9 @@ a.gnb-menu-item {
 
 /* 메인 아티클 1 */
 
-.card-article {
+.card-section {
     display: flex;
     padding-top: 9.6rem;
-    margin: 0 -1.8rem;
 }
 
 .card-wrap {
@@ -401,8 +406,9 @@ a.gnb-menu-item {
 
 /* 메인 아티클 2 */
 
-.culture-article {
-    margin: 3.6rem 0;
+.culture-section {
+    margin-top: 3.6rem;
+    margin-bottom: 3.6rem;
     padding: 5.4rem 6.6rem 0;
     border-radius: 14px;
     text-align: center;
