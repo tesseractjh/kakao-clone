@@ -256,6 +256,18 @@ a.gnb-menu-item {
     background: url('./images/cate.svg') no-repeat 0 0;
 }
 
+.cate-txt.new::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 7rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-left: 0.3rem;
+    border-radius: 0.8rem;
+    background-color: #ff5737;
+}
+
 .card-link {
     display: block;
     position: relative;
