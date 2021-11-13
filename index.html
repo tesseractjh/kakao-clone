@@ -1,229 +1,383 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>카카오</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마카오</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="doc-header">
-        <nav class="gnb">
-            <h1 class="doc-header-title">
-                <a href="#">kakao</a>
-            </h1>
-            <ul class="gnb-menu">
-                <li><a class="gnb-menu-item" href="#">카카오</a></li>
-                <li><a class="gnb-menu-item" href="#">뉴스</a></li>
-                <li><a class="gnb-menu-item" href="#">기술과 서비스</a></li>
-                <li><a class="gnb-menu-item" href="#">약속과 책임</a></li>
+  <header class="doc-header">
+    <nav class="gnb">
+      <h1 class="doc-header-title">
+        <a href="#">makao</a>
+      </h1>
+      <ul class="gnb-menu">
+        <li><a class="gnb-menu-item" href="#">마카오</a></li>
+        <li><a class="gnb-menu-item" href="#">뉴스</a></li>
+        <li><a class="gnb-menu-item" href="#">기술과 서비스</a></li>
+        <li><a class="gnb-menu-item" href="#">약속과 책임</a></li>
+      </ul>
+      <ul class="gnb-util">
+        <li>
+          <button type="button" class="button-icon">
+            <span class="blind">검색창 열기</span>
+            <svg viewBox="0 0 28 28" class="gnb-svg">
+              <g transform="translate(4 4)">
+                <circle cx="8.944" cy="8.944" r="8.944"></circle>
+                <path d="M14.987 14.987L21.017 21.017"></path>
+              </g>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="button-icon">
+            <span class="blind">영어로 보기</span>
+            <svg viewBox="0 0 28 28" class="gnb-svg">
+              <g transform="translate(3 3) scale(1.2)">
+                <path d="M19.353 9.914c0 5.213-4.226 9.438-9.438 9.438-5.213 0-9.438-4.225-9.438-9.438C.477 4.702 4.702.477 9.915.477c5.212 0 9.438 4.225 9.438 9.437z"></path>
+                <path d="M13.662 9.914c0 5.213-3.748 9.438-3.748 9.438s-3.747-4.225-3.747-9.438c0-5.212 3.747-9.437 3.747-9.437s3.748 4.225 3.748 9.437z"></path>
+                <path d="M.876 7.018L18.952 7.018M.876 12.811L18.952 12.811"></path>
+              </g>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="button-icon">
+            <span class="blind">다크모드로 변경하기</span>
+            <svg viewBox="0 0 28 28" class="gnb-svg">
+              <g transform="translate(6 4) scale(1.2)">
+                <path d="M16.086 13.417c-5.013 0-9.076-4.04-9.076-9.023 0-1.596.42-3.093 1.152-4.394C3.58.456 0 4.3 0 8.977 0 13.961 4.064 18 9.076 18c3.407 0 6.372-1.868 7.924-4.628-.3.03-.605.045-.914.045z"></path>
+              </g>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="doc-main">
+    <section class="main-header">
+      <h2 class="blind">홈 본문</h2>
+      <p class="main-title">
+        <em class="title-emph">오늘의 마카오</em>
+        <span>11월 9일 화요일 소식입니다</span>
+      </p>
+    </section>
+    <section class="card-news-top">
+      <h2 class="blind">마카오 소식 상단</h2>
+      <div class="card-wrap">
+        <article class="card sticky-card">
+          <span class="card-cate">
+              <span class="blind">새로운 소식</span>
+              <img src="./images/info.png" alt="" class="cate-icon">
+              <span class="cate-txt new">보도자료</span>
+          </span>
+          <a href="#" class="card-link">
+              <strong class="card-title">마카오엔터테인먼트, 서울시 주최 ‘2021 서울웹툰공모전’ 단독 후원사로 참여</strong>
+              <span class="img-wrap">
+                <img src="./images/card01.jpg" alt="" class="card-img">
+              </span>
+          </a>
+          <span class="card-info">
+              <span class="card-keyword">#마카오엔터테인먼트</span>
+              <span class="card-keyword">#마카오페이지</span>
+              <span class="card-keyword">#서울시</span>
+          </span>
+          <button type="button" class="card-button">
+            <svg viewBox="0 0 28 28" class="card-svg">
+                <g transform="translate(13 4)">
+                  <circle cx="2" cy="2" r="2"></circle>
+                  <circle cx="2" cy="10" r="2"></circle>
+                  <circle cx="2" cy="18" r="2"></circle>
+                </g>
+            </svg>
+          </button>
+        </article>
+      </div>
+      <div class="card-wrap">
+        <div class="card-grid-top">
+          <article class="card grid-span1">
+            <span class="card-cate">
+              <img src="./images/info.png" alt="" class="cate-icon">
+              <span class="cate-txt">보도자료</span>
+            </span>
+            <a href="#" class="card-link">
+              <strong class="mini-title multi-ellipsis">
+              마카오재팬, 마카오픽코마로 사명 변경하고 프랑스 진출
+              글로벌 대표 만화 콘텐츠 플랫폼 기업으로 도약
+              </strong>
+              <span class="img-wrap">
+                <img src="./images/card02.png" alt="" class="card-img">
+              </span>
+            </a>
+            <span class="card-info mini-info">
+              <span class="card-keyword">#글로벌진출</span>
+              <span class="card-keyword">#마카오재팬</span>
+              <span class="card-keyword">#마카오픽코마</span>
+              <span class="card-keyword">#프랑스</span>
+              <span class="card-keyword">#픽코마</span>
+            </span>
+            <button type="button" class="card-button">
+              <svg viewBox="0 0 28 28" class="card-svg">
+                  <g transform="translate(13 4)">
+                    <circle cx="2" cy="2" r="2"></circle>
+                    <circle cx="2" cy="10" r="2"></circle>
+                    <circle cx="2" cy="18" r="2"></circle>
+                  </g>
+              </svg>
+            </button>
+          </article>
+          <article class="card">
+            <a href="#" class="mini-wrap">
+              <span class="card-cate">
+                <img src="./images/stock.png" alt="" class="cate-icon">
+                <span class="cate-txt">주가정보</span>
+              </span>
+              <span class="blind">마카오 주가정보</span>
+              <strong class="stock-info">
+                <span class="stock-price">125,000</span>
+                <span class="price-change decline">
+                  <span class="blind">전일대비 하락</span>
+                  3500
+                </span>
+              </strong>
+              <span class="stock-date">2021.11.08 22:57PM</span>
+            </a>
+          </article>
+          <article class="card grid-span2">
+            <span class="card-cate">
+              <img src="./images/info.png" alt="" class="cate-icon">
+              <span class="cate-txt">보도자료</span>
+            </span>
+            <a href="#" class="card-link">
+              <strong class="mini-title multi-ellipsis">마카오, 2021년 3분기 연결 매출 1조7,408억 원, 영업이익 1,682억 원</strong>
+              <span class="img-wrap">
+                <img src="./images/card03.png" alt="" class="card-img">
+              </span>
+            </a>
+            <span class="card-info mini-info">
+              <span class="card-keyword">##2021년3분기</span>
+              <span class="card-keyword">##실적발표</span>
+            </span>
+            <button type="button" class="card-button">
+              <svg viewBox="0 0 28 28" class="card-svg">
+                <g transform="translate(13 4)">
+                  <circle cx="2" cy="2" r="2"></circle>
+                  <circle cx="2" cy="10" r="2"></circle>
+                  <circle cx="2" cy="18" r="2"></circle>
+                </g>
+              </svg>
+            </button>
+          </article>
+          <article class="card">
+            <span class="card-cate">
+              <img src="./images/heart.png" alt="" class="cate-icon">
+              <span class="cate-txt">약속과 책임</span>
+            </span>
+            <a href="#" class="card-link">
+              <strong class="mini-title multi-ellipsis">마카오는 당신과 함께 더 나은 세상을 만듭니다.</strong>
+            </a>
+            <span class="card-info mini-info pull-line">
+              <span class="card-keyword">#약속과책임</span>
+              <span class="card-keyword">#esg</span>
+              <span class="card-keyword">#소셜임팩트</span>
+            </span>
+          </article>
+          <article class="card grid-span3">
+            <span class="card-cate">
+              <img src="./images/stock.png" alt="" class="cate-icon">
+              <span class="cate-txt">투자정보</span>
+            </span>
+            <a href="#" class="card-link">
+              <strong class="mini-title multi-ellipsis">2021년 3분기 실적발표</strong>
+              <span class="img-wrap">
+                <img src="./images/card03.png" alt="" class="card-img">
+              </span>
+            </a>
+            <span class="card-info mini-info">
+              <span class="card-keyword">#마카오 실적</span>
+              <span class="card-keyword">#마카오 3분기 실적</span>
+              <span class="card-keyword">#마카오 IR</span>
+            </span>
+            <button type="button" class="card-button">
+              <svg viewBox="0 0 28 28" class="card-svg">
+                <g transform="translate(13 4)">
+                  <circle cx="2" cy="2" r="2"></circle>
+                  <circle cx="2" cy="10" r="2"></circle>
+                  <circle cx="2" cy="18" r="2"></circle>
+                </g>
+              </svg>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="culture-section">
+        <h2 class="blind">마카오문화</h2>
+        <strong class="culture-title">기술과 사람으로 더 나은 세상을 만듭니다.</strong>
+        <a href="#" class="culture-link">
+          마카오문화 바로가기
+          <img src="images/arrow.svg" alt="" class="culture-arrow">
+        </a>
+        <img src="images/culture.png" alt="" class="culture-img">
+    </section>
+    <section class="card-news-bottom">
+      <h2 class="blind">마카오 소식 하단</h2>
+      <div class="card-wrap reverse">
+        <article class="card sticky-card">
+          <span class="card-cate">
+              <img src="./images/info.png" alt="" class="cate-icon">
+              <span class="cate-txt">보도자료</span>
+          </span>
+          <a href="#" class="card-link">
+              <strong class="card-title">마카오엔터테인먼트, 서울시 주최 ‘2021 서울웹툰공모전’ 단독 후원사로 참여</strong>
+              <span class="img-wrap">
+                <img src="./images/card01.jpg" alt="" class="card-img">
+              </span>
+          </a>
+          <span class="card-info">
+              <span class="card-keyword">#마카오엔터테인먼트</span>
+              <span class="card-keyword">#마카오페이지</span>
+              <span class="card-keyword">#서울시</span>
+          </span>
+          <button type="button" class="card-button">
+            <svg viewBox="0 0 28 28" class="card-svg">
+                <g transform="translate(13 4)">
+                  <circle cx="2" cy="2" r="2"></circle>
+                  <circle cx="2" cy="10" r="2"></circle>
+                  <circle cx="2" cy="18" r="2"></circle>
+                </g>
+            </svg>
+          </button>
+        </article>
+      </div>
+      <div class="card-wrap">
+        <div class="card-grid-bottom">
+          <article class="card">
+            <span class="card-cate">
+              <img src="./images/customer.png" alt="" class="cate-icon">
+              <span class="cate-txt">고객센터</span>
+            </span>
+            <strong class="card-message">어떤 서비스를 도와드릴까요?</strong>
+            <ul class="cs-list">
+              <li class="cs-link"><a href="#">마카오</a></li>
+              <li class="cs-link"><a href="#">다음</a></li>
+              <li class="cs-link"><a href="#">멜론</a></li>
             </ul>
-            <ul class="gnb-util">
-                <li>
-                    <button type="button" class="button-icon">
-                        <span class="blind">검색창 열기</span>
-                        <svg viewBox="0 0 28 28" class="gnb-svg">
-                            <g transform="translate(4 4)">
-                                <circle cx="8.944" cy="8.944" r="8.944"></circle>
-                                <path d="M14.987 14.987L21.017 21.017"></path>
-                            </g>
-                        </svg>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="button-icon">
-                        <span class="blind">영어로 보기</span>
-                        <svg viewBox="0 0 28 28" class="gnb-svg">
-                            <g transform="translate(3 3) scale(1.2)">
-                                <path d="M19.353 9.914c0 5.213-4.226 9.438-9.438 9.438-5.213 0-9.438-4.225-9.438-9.438C.477 4.702 4.702.477 9.915.477c5.212 0 9.438 4.225 9.438 9.437z"></path>
-                                <path d="M13.662 9.914c0 5.213-3.748 9.438-3.748 9.438s-3.747-4.225-3.747-9.438c0-5.212 3.747-9.437 3.747-9.437s3.748 4.225 3.748 9.437z"></path>
-                                <path d="M.876 7.018L18.952 7.018M.876 12.811L18.952 12.811"></path>
-                            </g>
-                        </svg>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="button-icon">
-                        <span class="blind">다크모드로 변경하기</span>
-                        <svg viewBox="0 0 28 28" class="gnb-svg">
-                            <g transform="translate(6 4) scale(1.2)">
-                                <path d="M16.086 13.417c-5.013 0-9.076-4.04-9.076-9.023 0-1.596.42-3.093 1.152-4.394C3.58.456 0 4.3 0 8.977 0 13.961 4.064 18 9.076 18c3.407 0 6.372-1.868 7.924-4.628-.3.03-.605.045-.914.045z"></path>
-                            </g>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="doc-main">
-        <section class="main-header">
-            <h2 class="blind">홈 본문</h2>
-            <p class="main-title">
-                <em class="title-emph">오늘의 카카오</em>
-                <span>11월 9일 화요일 소식입니다</span>
-            </p>
-        </section>
-        <section class="card-news-top">
-            <h2 class="blind">카카오 소식</h2>
-            <div class="card-wrap">
-                <article class="card sticky-card">
-                    <span class="card-cate">
-                            <span class="blind">새로운 소식</span>
-                            <img src="./images/info.png" alt="" class="cate-icon">
-                            <span class="cate-txt new">보도자료</span>
-                    </span>
-                    <a href="#" class="card-link">
-                            <strong class="card-title">카카오엔터테인먼트, 서울시 주최 ‘2021 서울웹툰공모전’ 단독 후원사로 참여</strong>
-                            <span class="img-wrap">
-                                <img src="./images/card01.jpg" alt="" class="card-img">
-                            </span>
-                    </a>
-                    <span class="card-info">
-                            <span class="card-keyword">#카카오엔터테인먼트</span>
-                            <span class="card-keyword">#카카오페이지</span>
-                            <span class="card-keyword">#서울시</span>
-                    </span>
-                    <button type="button" class="card-button">
-                        <svg viewBox="0 0 28 28" class="card-svg">
-                                <g transform="translate(13 4)">
-                                    <circle cx="2" cy="2" r="2"></circle>
-                                    <circle cx="2" cy="10" r="2"></circle>
-                                    <circle cx="2" cy="18" r="2"></circle>
-                                </g>
-                        </svg>
-                    </button>
-                </article>
-            </div>
-            <div class="card-wrap">
-                <div class="card-grid">
-                    <article class="card long-card1">
-                        <span class="card-cate">
-                            <img src="./images/info.png" alt="" class="cate-icon">
-                            <span class="cate-txt">보도자료</span>
-                        </span>
-                        <a href="#" class="card-link">
-                            <strong class="mini-title multi-ellipsis">
-                            카카오재팬, 카카오픽코마로 사명 변경하고 프랑스 진출
-                            <br>
-                            글로벌 대표 만화 콘텐츠 플랫폼 기업으로 도약
-                            </strong>
-                            <span class="img-wrap">
-                                <img src="./images/card02.png" alt="" class="card-img">
-                            </span>
-                        </a>
-                        <span class="card-info mini-info">
-                            <span class="card-keyword">#글로벌진출</span>
-                            <span class="card-keyword">#카카오재팬</span>
-                            <span class="card-keyword">#카카오픽코마</span>
-                            <span class="card-keyword">#프랑스</span>
-                            <span class="card-keyword">#픽코마</span>
-                        </span>
-                        <button type="button" class="card-button">
-                            <svg viewBox="0 0 28 28" class="card-svg">
-                                    <g transform="translate(13 4)">
-                                        <circle cx="2" cy="2" r="2"></circle>
-                                        <circle cx="2" cy="10" r="2"></circle>
-                                        <circle cx="2" cy="18" r="2"></circle>
-                                    </g>
-                            </svg>
-                        </button>
-                    </article>
-                    <article class="card">
-                        <a href="#" class="mini-wrap">
-                            <span class="card-cate">
-                                <img src="./images/stock.png" alt="" class="cate-icon">
-                                <span class="cate-txt">주가정보</span>
-                            </span>
-                            <span class="blind">카카오 주가정보</span>
-                            <strong class="stock-info">
-                                <span class="stock-price">125,000</span>
-                                <span class="price-change decline">
-                                    <span class="blind">전일대비 하락</span>
-                                    3500
-                                </span>
-                            </strong>
-                            <span class="stock-date">2021.11.08 22:57PM</span>
-                        </a>
-                    </article>
-                    <article class="card long-card2">
-                        <span class="card-cate">
-                            <img src="./images/info.png" alt="" class="cate-icon">
-                            <span class="cate-txt">보도자료</span>
-                        </span>
-                        <a href="#" class="card-link">
-                            <strong class="mini-title multi-ellipsis">카카오, 2021년 3분기 연결 매출 1조7,408억 원, 영업이익 1,682억 원</strong>
-                            <span class="img-wrap">
-                                <img src="./images/card03.png" alt="" class="card-img">
-                            </span>
-                        </a>
-                        <span class="card-info mini-info">
-                            <span class="card-keyword">##2021년3분기</span>
-                            <span class="card-keyword">##실적발표</span>
-                        </span>
-                        <button type="button" class="card-button">
-                            <svg viewBox="0 0 28 28" class="card-svg">
-                                <g transform="translate(13 4)">
-                                    <circle cx="2" cy="2" r="2"></circle>
-                                    <circle cx="2" cy="10" r="2"></circle>
-                                    <circle cx="2" cy="18" r="2"></circle>
-                                </g>
-                            </svg>
-                        </button>
-                    </article>
-                    <article class="card">
-                        <span class="card-cate">
-                            <img src="./images/heart.png" alt="" class="cate-icon">
-                            <span class="cate-txt">약속과 책임</span>
-                        </span>
-                        <a href="#" class="card-link">
-                            <strong class="mini-title multi-ellipsis">카카오는 당신과 함께 더 나은 세상을 만듭니다.</strong>
-                        </a>
-                        <span class="card-info mini-info pull-line">
-                            <span class="card-keyword">#약속과책임</span>
-                            <span class="card-keyword">#esg</span>
-                            <span class="card-keyword">#소셜임팩트</span>
-                        </span>
-                    </article>
-                    <article class="card long-card3">
-                        <span class="card-cate">
-                            <img src="./images/stock.png" alt="" class="cate-icon">
-                            <span class="cate-txt">투자정보</span>
-                        </span>
-                        <a href="#" class="card-link">
-                            <strong class="mini-title multi-ellipsis">2021년 3분기 실적발표</strong>
-                            <span class="img-wrap">
-                                <img src="./images/card03.png" alt="" class="card-img">
-                            </span>
-                        </a>
-                        <span class="card-info mini-info">
-                            <span class="card-keyword">#카카오 실적</span>
-                            <span class="card-keyword">#카카오 3분기 실적</span>
-                            <span class="card-keyword">#카카오 IR</span>
-                        </span>
-                        <button type="button" class="card-button">
-                            <svg viewBox="0 0 28 28" class="card-svg">
-                                <g transform="translate(13 4)">
-                                    <circle cx="2" cy="2" r="2"></circle>
-                                    <circle cx="2" cy="10" r="2"></circle>
-                                    <circle cx="2" cy="18" r="2"></circle>
-                                </g>
-                            </svg>
-                        </button>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section class="culture-section">
-                <h2 class="blind">카카오문화</h2>
-                <strong class="culture-title">기술과 사람으로 더 나은 세상을 만듭니다.</strong>
-                <a href="#" class="culture-link">
-                    카카오문화 바로가기
-                    <img src="images/arrow.svg" alt="" class="culture-arrow">
-                </a>
-                <img src="images/culture.png" alt="" class="culture-img">
-        </section>
-    </main>
+          </article>
+          <article class="card grid-span4">
+            <a href="#" class="mini-wrap">
+              <span class="card-cate">
+                <img src="./images/stock.png" alt="" class="cate-icon">
+                <span class="cate-txt">주가정보</span>
+              </span>
+              <span class="blind">마카오 주가정보</span>
+              <strong class="stock-info">
+                <span class="stock-price">125,000</span>
+                <span class="price-change decline">
+                  <span class="blind">전일대비 하락</span>
+                  3500
+                </span>
+              </strong>
+              <span class="stock-date">2021.11.08 22:57PM</span>
+            </a>
+          </article>
+          <article class="card grid-span5">
+            <span class="card-cate">
+              <img src="./images/info.png" alt="" class="cate-icon">
+              <span class="cate-txt">보도자료</span>
+            </span>
+            <a href="#" class="card-link">
+              <strong class="mini-title multi-ellipsis">마카오, 2021년 3분기 연결 매출 1조7,408억 원, 영업이익 1,682억 원</strong>
+              <span class="img-wrap">
+                <img src="./images/card03.png" alt="" class="card-img">
+              </span>
+            </a>
+            <span class="card-info mini-info">
+              <span class="card-keyword">##2021년3분기</span>
+              <span class="card-keyword">##실적발표</span>
+            </span>
+            <button type="button" class="card-button">
+              <svg viewBox="0 0 28 28" class="card-svg">
+                <g transform="translate(13 4)">
+                  <circle cx="2" cy="2" r="2"></circle>
+                  <circle cx="2" cy="10" r="2"></circle>
+                  <circle cx="2" cy="18" r="2"></circle>
+                </g>
+              </svg>
+            </button>
+          </article>
+          <article class="card grid-span6">
+            <span class="card-cate">
+              <img src="./images/heart.png" alt="" class="cate-icon">
+              <span class="cate-txt">약속과 책임</span>
+            </span>
+            <a href="#" class="card-link">
+              <strong class="mini-title multi-ellipsis">마카오는 당신과 함께 더 나은 세상을 만듭니다.</strong>
+            </a>
+            <span class="card-info mini-info pull-line">
+              <span class="card-keyword">#약속과책임</span>
+              <span class="card-keyword">#esg</span>
+              <span class="card-keyword">#소셜임팩트</span>
+            </span>
+          </article>
+          <article class="card grid-span7">
+            <span class="card-cate">
+              <img src="./images/stock.png" alt="" class="cate-icon">
+              <span class="cate-txt">투자정보</span>
+            </span>
+            <a href="#" class="card-link">
+              <strong class="mini-title multi-ellipsis">2021년 3분기 실적발표</strong>
+              <span class="img-wrap">
+                <img src="./images/card03.png" alt="" class="card-img">
+              </span>
+            </a>
+            <span class="card-info mini-info">
+              <span class="card-keyword">#마카오 실적</span>
+              <span class="card-keyword">#마카오 3분기 실적</span>
+              <span class="card-keyword">#마카오 IR</span>
+            </span>
+            <button type="button" class="card-button">
+              <svg viewBox="0 0 28 28" class="card-svg">
+                <g transform="translate(13 4)">
+                  <circle cx="2" cy="2" r="2"></circle>
+                  <circle cx="2" cy="10" r="2"></circle>
+                  <circle cx="2" cy="18" r="2"></circle>
+                </g>
+              </svg>
+            </button>
+          </article>
+          <article class="card">
+            <span class="card-cate">
+              <img src="./images/stock.png" alt="" class="cate-icon">
+              <span class="cate-txt">투자정보</span>
+            </span>
+            <a href="#" class="card-link">
+              <strong class="mini-title multi-ellipsis">2021년 3분기 실적발표</strong>
+              <span class="img-wrap">
+                <img src="./images/card03.png" alt="" class="card-img">
+              </span>
+            </a>
+            <span class="card-info mini-info">
+              <span class="card-keyword">#마카오 실적</span>
+              <span class="card-keyword">#마카오 3분기 실적</span>
+              <span class="card-keyword">#마카오 IR</span>
+            </span>
+            <button type="button" class="card-button">
+              <svg viewBox="0 0 28 28" class="card-svg">
+                <g transform="translate(13 4)">
+                  <circle cx="2" cy="2" r="2"></circle>
+                  <circle cx="2" cy="10" r="2"></circle>
+                  <circle cx="2" cy="18" r="2"></circle>
+                </g>
+              </svg>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
-</html>`
+</html>
