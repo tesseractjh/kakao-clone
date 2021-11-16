@@ -339,31 +339,7 @@ a.gnb-menu-item {
   grid-gap: 36px;
 }
 
-.grid-span1 {
-  grid-row: span 2;
-}
-
-.grid-span2 {
-  grid-row: span 2;
-}
-
-.grid-span3 {
-  grid-row: span 2;
-}
-
-.grid-span4 {
-  grid-row: span 2;
-}
-
-.grid-span5 {
-  grid-row: span 2;
-}
-
-.grid-span6 {
-  grid-row: span 2;
-}
-
-.grid-span7 {
+.grid-span {
   grid-row: span 2;
 }
 
