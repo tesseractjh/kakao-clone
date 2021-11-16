@@ -20,6 +20,9 @@
 }
 
 /* reset */
+* {
+  box-sizing: border-box;
+}
 
 body {
   word-break: keep-all;
@@ -31,11 +34,11 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 a:visited {
-  color: black;
+  color: inherit;
 }
 
 button {
@@ -187,8 +190,15 @@ a.gnb-menu-item {
 }
 
 .card-wrap {
-  width: 50%;
   padding: 0 18px;
+}
+
+.single-wrap {
+  width: 666px;
+}
+
+.multi-wrap {
+  width: 666px;
 }
 
 .card {
@@ -209,6 +219,8 @@ a.gnb-menu-item {
   position: -webkit-sticky;
   position: sticky;
   top: 109px;
+  height: calc(100vh - 143px);
+  max-height: 700px;
 }
 
 .card-cate {
@@ -296,6 +308,7 @@ a.gnb-menu-item {
 .card-img {
   display: block;
   width: 100%;
+  min-height: 100%;
 }
 
 .card-keyword {
@@ -319,12 +332,39 @@ a.gnb-menu-item {
   fill: #bbb;
 }
 
-.card-grid-top {
+.card-grid {
   display: grid;
-  height: 876px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, 297px);
+  grid-auto-rows: 192px;
   grid-gap: 36px;
+}
+
+.grid-span1 {
+  grid-row: span 2;
+}
+
+.grid-span2 {
+  grid-row: span 2;
+}
+
+.grid-span3 {
+  grid-row: span 2;
+}
+
+.grid-span4 {
+  grid-row: span 2;
+}
+
+.grid-span5 {
+  grid-row: span 2;
+}
+
+.grid-span6 {
+  grid-row: span 2;
+}
+
+.grid-span7 {
+  grid-row: span 2;
 }
 
 .mini-title {
@@ -393,11 +433,11 @@ a.gnb-menu-item {
 /* 카카오문화 */
 
 .culture-section {
+  height: 540px;
   margin: 36px 18px;
   padding: 54px 66px 0;
   border-radius: 14px;
   text-align: center;
-  box-sizing: border-box;
   box-shadow: 2px 5px 40px 0 rgb(0 0 0 / 8%);
 }
 
@@ -408,9 +448,9 @@ a.gnb-menu-item {
   font-family: "kakao4", sans-serif;
 }
 
-a.culture-link {
+.culture-link {
   display: inline-block;
-  height: 33px;
+  height: 42px;
   margin-top: 36px;
   padding: 9px 20px 0;
   border-radius: 42px;
@@ -420,6 +460,10 @@ a.culture-link {
   color: white;
   background-color: black;
   vertical-align: top;
+}
+
+.culture-link:visited {
+  color: white;
 }
 
 .culture-arrow {
@@ -434,8 +478,13 @@ a.culture-link {
   display: block;
   width: 100%;
   max-width: 900px;
-  height: auto;
   margin: 50px auto 0;
+}
+
+.short-img {
+  display: none;
+  width: 100%;
+  margin: 44px 53px 0;
 }
 
 /* 하단 뉴스 */
@@ -446,14 +495,6 @@ a.culture-link {
 
 .reverse {
   order: 1;
-}
-
-.card-grid-bottom {
-  display: grid;
-  height: 1104px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  grid-gap: 36px;
 }
 
 .card-message {
@@ -495,49 +536,10 @@ a.culture-link {
   color: #666;
 }
 
-
-
-
 /* media query */
-@media (min-width: 1440px) {
-  .grid-span1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-  }
-  
-  .grid-span2 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;
-  }
-  
-  .grid-span3 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
-  }
-
-  .grid-span4 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-  }
-
-  .grid-span5 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-  }
-
-  .grid-span6 {
-    grid-column: 2 / 3;
-    grid-row: 3 / 5;
-  }
-
-  .grid-span7 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 6;
-  }
-}
 
 /* Medium */
-@media (min-width: 1023px) and (max-width: 1439px) {
+@media (max-width: 1439px) {
   .gnb, .main-header {
     width: 952px;
   }
@@ -546,32 +548,88 @@ a.culture-link {
     width: 982px;
   }
 
-  .card-grid-top {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+  .single-wrap {
+    width: 655px;
+    padding: 0 15px;
+  }
+  
+  .multi-wrap {
+    width: 327px;
   }
 
-  .grid-span1 {
-    grid-row: 1 / 3;
+  .card-link {
+    height: calc(100% - 47px);
   }
-  
-  .grid-span2 {
-    grid-row: 4 / 6;
+
+  .sticky-card .img-wrap {
+    height: calc(100% - 156px);
   }
-  
-  .grid-span3 {
-    grid-row: 6 / 8;
+
+  .culture-section {
+    margin: 30px 15px 36px;
   }
 }
 
 /* Small */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
+  br {
+    display: block;
+  }
+
   .gnb, .main-header {
     width: 630px;
   }
 
   .doc-main {
     width: 660px;
+  }
+
+  .card-news-top {
+    flex-wrap: wrap;
+  }
+
+  .card-news-bottom {
+    flex-wrap: wrap-reverse;
+  }
+
+  .card-wrap {
+    padding: 0 15px;
+  }
+
+  .single-wrap {
+    width: 660px;
+  }
+  
+  .multi-wrap {
+    width: 660px;
+  }
+
+  .card-grid {
+    margin-top: 36px;
+  }
+
+  .culture-section {
+    height: auto;
+    margin-top: 36px;
+    padding: 48px 52px 38px;
+  }
+
+  .culture-title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  .culture-link {
+    margin-top: 24px;
+  }
+
+  .long-img {
+    display: none;
+  }
+
+  .short-img {
+    display: block;
+    max-width: 420px;
   }
 }
 
